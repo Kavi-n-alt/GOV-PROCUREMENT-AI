@@ -1,0 +1,11 @@
+:root { --bg: #f7f9fc; --ink: #0b2a4a; --muted: #6b7280; }
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background: var(--bg); color: var(--ink); margin: 0; padding: 1rem; }
+header { max-width: 900px; margin: 0 auto 1rem; }
+h1 { margin: 0 0 .25rem; font-size: 1.5rem; }
+.lede { margin: 0 0 .75rem; color: var(--muted); }
+main { max-width: 900px; margin: 0 auto; }
+form { display: flex; gap: .5rem; align-items: center; }
+button { padding: .5rem .75rem; }
+ul { padding-left: 1.25rem; }
+li { margin-bottom: .5rem; background: white; padding: .5rem; border-radius: 6px; }
+footer { max-width: 900px; margin: 1.25rem auto; color: var(--muted); font-size: .9rem; }

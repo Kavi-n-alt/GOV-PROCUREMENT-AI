@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gov Procurement Dashboard</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <h1 id="main-title">Gov Procurement Dashboard</h1>
+    <p class="lede">Accessible overview of published tenders. Use the form below to upload a tender PDF.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="upload-heading">
+      <h2 id="upload-heading">Upload Tender</h2>
+      <form id="upload-form">
+        <label for="file">Select PDF</label>
+        <input id="file" name="file" type="file" accept="application/pdf" required aria-required="true" />
+        <button id="upload-btn" type="submit">Upload</button>
+        <div id="upload-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <hr />
+
+    <section aria-labelledby="list-heading">
+      <h2 id="list-heading">Recent Tenders</h2>
+      <div id="tenders" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Frontend is served from `dashboard/` and consumes the backend API under <code>/api/</code>.</p>
+  </footer>
+
+  <script src="/main.js"></script>
+</body>
+</html>
